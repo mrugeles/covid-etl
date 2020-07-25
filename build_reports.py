@@ -1,11 +1,9 @@
-import pandas as pd
 import numpy as np
-import boto3
-
-from scipy.signal import find_peaks
+import pandas as pd
 from scipy.optimize import curve_fit
-from sklearn.model_selection import train_test_split
+from scipy.signal import find_peaks
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 
 confirmed_path = 'COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
