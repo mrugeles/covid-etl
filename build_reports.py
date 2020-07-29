@@ -12,6 +12,7 @@ recovered_path = '../COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_
 
 countries = pd.read_csv(confirmed_path)['Country/Region'].unique()
 
+
 def process_time_series(path):
     dataset = pd.read_csv(path)
     dataset.drop(['Province/State', 'Lat', 'Long'], axis=1, inplace=True)
@@ -33,7 +34,7 @@ def fit_logistic_curve(predictions):
 
 
 def to_polinomyal(x):
-    polynomial_features = PolynomialFeatures(degree=3)
+    polynomial_features = PolynomialFeatures(degree=4)
     x = x[:, np.newaxis]
 
     return polynomial_features.fit_transform(x)

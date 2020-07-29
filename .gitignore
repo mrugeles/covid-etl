@@ -1,2 +1,6 @@
 datasets/**
 .idea/**
+.ipynb_checkpoints/**
+*.ipynb
+*.csv
+__pycache__/**
