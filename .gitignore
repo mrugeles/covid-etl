@@ -1,5 +1,6 @@
 datasets/**
 .idea/**
+.env/**
 .ipynb_checkpoints/**
 *.ipynb
 *.csv
